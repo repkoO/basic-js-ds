@@ -98,7 +98,7 @@ class BinarySearchTree {
 
     let currentValue = this.rootValue;
     while (currentValue.left !== null) {
-      currentValue === currentValue.left
+      currentValue = currentValue.left
     }
     return currentValue.data;
   }
@@ -108,7 +108,7 @@ class BinarySearchTree {
 
     let currentValue = this.rootValue;
     while (currentValue.right !== null) {
-      currentValue === currentValue.right;
+      currentValue = currentValue.right;
     }
     return currentValue.data;
   }
