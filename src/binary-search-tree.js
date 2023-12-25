@@ -94,13 +94,23 @@ class BinarySearchTree {
   }
 
   min() {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
+    if (this.rootValue === null) return null;
+
+    let currentValue = this.rootValue;
+    while (currentValue.left !== null) {
+      currentValue === currentValue.left
+    }
+    return currentValue.data;
   }
 
   max() {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
+    if (this.rootValue === null) return null;
+
+    let currentValue = this.rootValue;
+    while (currentValue.right !== null) {
+      currentValue === currentValue.right;
+    }
+    return currentValue.data;
   }
 }
 
